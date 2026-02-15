@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMIN - Prezentacija aplikacije</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-text">
+                    <div class="hero-label">Sportska aplikacija</div>
+                    <h1 class="display-3 fw-900">TERMIN</h1>
+                    <p class="lead mb-4">Organiziraj sportske termine, prati statistike i natjeci se s prijateljima. Sve na jednom mjestu.</p>
+                    <div class="hero-badges mb-4">
+                        <span class="badge-tech"><i class="bi bi-android2"></i> Android</span>
+                        <span class="badge-tech"><i class="bi bi-microsoft"></i> .NET Backend</span>
+                        <span class="badge-tech"><i class="bi bi-database"></i> MSSQL</span>
+                    </div>
+                    <a href="#screens" class="btn btn-primary btn-lg px-5">Pogledaj ekrane <i class="bi bi-arrow-down"></i></a>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="hero-phone-stack">
+                        <!-- Back phone -->
+                        <div class="phone-frame hero-phone hero-phone-back">
+                            <div class="phone-bezel-top">
+                                <div class="phone-camera"></div>
+                            </div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-orange"><h6>Ljestvica</h6></div>
+                                    <div class="s-tabs s-tabs-orange"><span class="active">MVP</span><span>Golovi</span><span>Asist.</span><span>Ocjena</span></div>
+                                    <div class="s-pad">
+                                        <div class="s-rank-item"><span class="s-rank-badge gold">1</span><div class="s-rank-info"><strong>Bruno B.</strong><small>67 termina</small></div><span class="s-rank-value">24</span></div>
+                                        <div class="s-rank-item"><span class="s-rank-badge silver">2</span><div class="s-rank-info"><strong>Toni N.</strong><small>107 termina</small></div><span class="s-rank-value">20</span></div>
+                                        <div class="s-rank-item"><span class="s-rank-badge bronze">3</span><div class="s-rank-info"><strong>Josip K.</strong><small>67 termina</small></div><span class="s-rank-value">14</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                        <!-- Front phone -->
+                        <div class="phone-frame hero-phone hero-phone-front">
+                            <div class="phone-bezel-top">
+                                <div class="phone-camera"></div>
+                            </div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient"><h6>Pocetna</h6></div>
+                                    <div class="s-pad">
+                                        <div class="s-section-label"><i class="bi bi-envelope-open"></i> Pozivi</div>
+                                        <div class="s-card s-card-invite">
+                                            <div class="s-card-top"><div class="s-card-icon-wrap blue"><i class="bi bi-geo-alt-fill"></i></div><div><strong>SC Oranice</strong><small>08.02. 18:00 &middot; 7/10</small></div></div>
+                                            <div class="s-card-actions"><button class="s-btn s-btn-accept"><i class="bi bi-check2"></i> Prihvati</button><button class="s-btn s-btn-reject"><i class="bi bi-x-lg"></i> Odbij</button></div>
+                                        </div>
+                                        <div class="s-section-label mt-2"><i class="bi bi-lightning-fill"></i> Aktivni</div>
+                                        <div class="s-card"><div class="s-card-top"><div class="s-card-icon-wrap green"><i class="bi bi-geo-alt-fill"></i></div><div><strong>NC Salata</strong><small>08.02. 18:00 &middot; 7/10</small></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Overview -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Kljucne funkcionalnosti</h2>
+            <div class="row g-4">
+                <div class="col-md-4"><div class="feature-card"><div class="feature-icon"><i class="bi bi-calendar-plus"></i></div><h5>Kreiranje termina</h5><p>Admin kreira termin, definira lokaciju, datum, vrijeme, maksimalan broj igraca i poziva prijatelje ili cijele ekipe.</p></div></div>
+                <div class="col-md-4"><div class="feature-card"><div class="feature-icon icon-purple"><i class="bi bi-people"></i></div><h5>Podjela timova</h5><p>Inteligentna podjela timova na temelju statistike igraca. Random algoritam osigurava ravnopravne timove.</p></div></div>
+                <div class="col-md-4"><div class="feature-card"><div class="feature-icon icon-orange"><i class="bi bi-trophy"></i></div><h5>Ljestvice i statistike</h5><p>Prati golove, asistencije, MVP nagrade i ocjene. Natjeci se s prijateljima na ljestvicama.</p></div></div>
+                <div class="col-md-4"><div class="feature-card"><div class="feature-icon icon-green"><i class="bi bi-person-plus"></i></div><h5>Prijatelji i ekipe</h5><p>Dodaj prijatelje, kreiraj ekipe za brzo pozivanje na termine. Pregledaj profile i statistike drugih igraca.</p></div></div>
+                <div class="col-md-4"><div class="feature-card"><div class="feature-icon icon-red"><i class="bi bi-shield-check"></i></div><h5>Admin i korisnik uloge</h5><p>Admin termina ima pune ovlasti - unos rezultata, podjela timova, glasanje za MVP. Korisnici prihvacaju/odbijaju pozive.</p></div></div>
+                <div class="col-md-4"><div class="feature-card"><div class="feature-icon icon-teal"><i class="bi bi-bar-chart-line"></i></div><h5>Detaljne statistike</h5><p>Ukupni golovi, asistencije, odigrani termini i ukupna ocjena na profilu svakog igraca.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREENS SECTION -->
+    <section id="screens" class="screens-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Ekrani aplikacije</h2>
+
+            <!-- ======== SCREEN 1: LOGIN ======== -->
+            <div class="screen-showcase" data-screen="1">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="login-hero">
+                                        <div class="login-logo-circle"><i class="bi bi-dribbble"></i></div>
+                                        <h3 class="login-app-name">TERMIN</h3>
+                                        <p class="login-tagline">Organiziraj. Igraj. Pobijedi.</p>
+                                    </div>
+                                    <div class="login-form-card">
+                                        <p class="login-form-title">Prijavi se</p>
+                                        <button class="s-btn-google">
+                                            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                                            Nastavi s Googleom
+                                        </button>
+                                        <div class="login-divider"><span>ili</span></div>
+                                        <div class="s-input-wrap"><i class="bi bi-envelope"></i><input type="text" placeholder="E-mail adresa" readonly></div>
+                                        <div class="s-input-wrap"><i class="bi bi-lock"></i><input type="password" placeholder="Lozinka" readonly></div>
+                                        <button class="s-btn-primary w-100">Prijavi se</button>
+                                        <p class="login-switch">Nemas racun? <a>Registriraj se</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge">Ekran 1</span>
+                            <h3>Prijava</h3>
+                            <p>Korisnici se mogu prijaviti putem <strong>Google racuna</strong> ili klasicnim email/lozinka pristupom. Minimalisticki dizajn s jasnim CTA gumbom.</p>
+                            <div class="tech-note"><i class="bi bi-gear"></i><span><strong>Tehnologija:</strong> Microsoft.Identity za upravljanje korisnicima, OAuth 2.0 za Google prijavu</span></div>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Google OAuth prijava jednim klikom</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Email + lozinka autentifikacija</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Brzo prebacivanje na registraciju</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 2: REGISTER ======== -->
+            <div class="screen-showcase" data-screen="2">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="register-hero">
+                                        <h4 class="register-title">TERMIN</h4>
+                                        <p class="register-sub">Kreiraj svoj racun</p>
+                                    </div>
+                                    <div class="register-form-card">
+                                        <button class="s-btn-google">
+                                            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                                            Registriraj se s Googleom
+                                        </button>
+                                        <div class="login-divider"><span>ili</span></div>
+                                        <div class="s-input-row"><div class="s-input-wrap s-input-half"><i class="bi bi-person"></i><input type="text" placeholder="Ime" readonly></div><div class="s-input-wrap s-input-half"><i class="bi bi-person"></i><input type="text" placeholder="Prezime" readonly></div></div>
+                                        <div class="s-input-wrap"><i class="bi bi-envelope"></i><input type="text" placeholder="E-mail adresa" readonly></div>
+                                        <div class="s-input-wrap"><i class="bi bi-lock"></i><input type="password" placeholder="Lozinka" readonly></div>
+                                        <div class="s-input-wrap"><i class="bi bi-shield-lock"></i><input type="password" placeholder="Potvrdi lozinku" readonly></div>
+                                        <button class="s-btn-primary w-100">Registriraj se</button>
+                                        <p class="login-switch">Vec imas racun? <a>Prijavi se</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge">Ekran 2</span>
+                            <h3>Registracija</h3>
+                            <p>Jednostavna registracija s <strong>Google racunom</strong> ili unosom osobnih podataka. Ime i prezime u istom redu za kompaktan layout.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Google OAuth registracija jednim klikom</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Ime, prezime, email, lozinka</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Potvrda lozinke za sigurnost</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Brzo prebacivanje na prijavu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 3: HOME ======== -->
+            <div class="screen-showcase" data-screen="3">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient"><h6>Pocetna</h6><small>Pozdrav, Bruno!</small></div>
+                                    <div class="s-pad">
+                                        <div class="s-section-label"><i class="bi bi-envelope-open-fill"></i> Pozivi na termine</div>
+                                        <div class="s-card s-card-invite">
+                                            <div class="s-card-top"><div class="s-card-icon-wrap blue"><i class="bi bi-geo-alt-fill"></i></div><div><strong>Sportski Centar Oranice</strong><small>Oranice ul. 128</small></div></div>
+                                            <div class="s-card-meta"><span><i class="bi bi-clock"></i> 08.02. 18:00</span><span><i class="bi bi-people-fill"></i> 7/10</span><span><i class="bi bi-person"></i> Dominik C.</span></div>
+                                            <div class="s-card-actions"><button class="s-btn s-btn-accept"><i class="bi bi-check2"></i> Prihvati</button><button class="s-btn s-btn-reject"><i class="bi bi-x-lg"></i> Odbij</button></div>
+                                        </div>
+                                        <div class="s-section-label mt-3"><i class="bi bi-lightning-fill"></i> Aktivni termini</div>
+                                        <div class="s-card">
+                                            <div class="s-card-top"><div class="s-card-icon-wrap green"><i class="bi bi-geo-alt-fill"></i></div><div><strong>NC Salata</strong><small>Salata ul. 5</small></div><span class="s-badge-live">AKTIVAN</span></div>
+                                            <div class="s-card-meta"><span><i class="bi bi-clock"></i> 08.02. 18:00</span><span><i class="bi bi-people-fill"></i> 7/10</span><span><i class="bi bi-person"></i> Toni N.</span></div>
+                                        </div>
+                                    </div>
+                                    <button class="s-fab"><i class="bi bi-plus-lg"></i></button>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span class="active"><i class="bi bi-house-door-fill"></i><small>Pocetna</small></span>
+                                    <span><i class="bi bi-calendar3"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge">Ekran 3</span>
+                            <h3>Pocetna stranica</h3>
+                            <p>Pocetna prikazuje <strong>pozive na termine</strong> s prihvati/odbij gumbima i <strong>aktivne termine</strong>. FAB gumb (+) za kreiranje novog termina.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Pozivi na termine s prihvati/odbij akcijama</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Aktivni termini s live indikatorom</li>
+                                <li><i class="bi bi-check-circle-fill"></i> FAB gumb za brzo kreiranje termina</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Prazan state kad nema aktivnih termina</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 4: CREATE TERMIN ======== -->
+            <div class="screen-showcase" data-screen="4">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-purple"><div class="s-header-back"><i class="bi bi-arrow-left"></i></div><h6>Novi termin</h6></div>
+                                    <div class="s-pad">
+                                        <div class="s-input-modern"><label>Naziv</label><input type="text" value="Futsal Oranice" readonly></div>
+                                        <div class="s-input-modern"><label>Adresa</label><input type="text" value="Oranice ul. 128" readonly></div>
+                                        <div class="s-input-row"><div class="s-input-modern s-input-half"><label>Datum</label><input type="text" value="08.02.2026" readonly></div><div class="s-input-modern s-input-half"><label>Vrijeme</label><input type="text" value="18:00" readonly></div></div>
+                                        <div class="s-input-row"><div class="s-input-modern s-input-half"><label>Max igraca</label><input type="text" value="10" readonly></div><div class="s-input-modern s-input-half"><label>Trajanje</label><input type="text" value="90 min" readonly></div></div>
+                                        <div class="s-input-modern"><label>Napomena</label><input type="text" value="Ponijeti bijele dresove" readonly></div>
+                                        <div class="s-section-label mt-2"><i class="bi bi-person-plus-fill"></i> Pozovi igrace</div>
+                                        <div class="s-invite-list">
+                                            <div class="s-invite-row"><div class="s-avatar-sm">BB</div><div class="s-invite-info"><strong>Bruno Busic</strong><small class="s-rating">7.3 <i class="bi bi-star-fill"></i></small></div><div class="s-toggle active"><div class="s-toggle-dot"></div></div></div>
+                                            <div class="s-invite-row"><div class="s-avatar-sm">TN</div><div class="s-invite-info"><strong>Toni Nikolic</strong><small class="s-rating">10.0 <i class="bi bi-star-fill"></i></small></div><div class="s-toggle active"><div class="s-toggle-dot"></div></div></div>
+                                            <div class="s-invite-row"><div class="s-avatar-sm">JK</div><div class="s-invite-info"><strong>Josip Kus</strong><small class="s-rating">4.5 <i class="bi bi-star-fill"></i></small></div><div class="s-toggle active"><div class="s-toggle-dot"></div></div></div>
+                                            <div class="s-invite-row"><div class="s-avatar-sm">JM</div><div class="s-invite-info"><strong>Josip Mak</strong><small class="s-rating">8.5 <i class="bi bi-star-fill"></i></small></div><div class="s-toggle"><div class="s-toggle-dot"></div></div></div>
+                                            <div class="s-invite-row s-invite-team"><div class="s-avatar-sm team"><i class="bi bi-people-fill"></i></div><div class="s-invite-info"><strong>Ekipa Majstori</strong><small>12 igraca</small></div><div class="s-toggle active"><div class="s-toggle-dot"></div></div></div>
+                                        </div>
+                                        <button class="s-btn-primary w-100 mt-3"><i class="bi bi-send-fill"></i> Kreiraj termin i pozovi</button>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span class="active"><i class="bi bi-house-door-fill"></i><small>Pocetna</small></span>
+                                    <span><i class="bi bi-calendar3"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-purple">Ekran 4</span>
+                            <h3>Kreiranje novog termina</h3>
+                            <p>Admin definira detalje termina i poziva igrace <strong>pojedinacno ili cijelu ekipu</strong>. Moderni toggle switchevi za odabir igraca.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Naziv, adresa, datum, vrijeme, max igraca, trajanje</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Napomena za igrace</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pozivanje pojedinacnih igraca s prikazom ocjene</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pozivanje cijele ekipe odjednom</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 5: ADMIN - TERMIN PRIJE POCETKA ======== -->
+            <div class="screen-showcase" data-screen="5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-red"><div class="s-header-back"><i class="bi bi-arrow-left"></i></div><h6>Detalji termina</h6><span class="s-admin-badge">ADMIN</span></div>
+                                    <div class="s-pad">
+                                        <div class="s-detail-hero">
+                                            <h6>Sportski Centar Oranice</h6>
+                                            <div class="s-detail-meta"><span><i class="bi bi-geo-alt"></i> Oranice ul. 128</span><span><i class="bi bi-clock"></i> 08.02. 18:00</span><span><i class="bi bi-hourglass-split"></i> 90 min</span></div>
+                                        </div>
+                                        <div class="s-countdown">
+                                            <div class="s-countdown-icon"><i class="bi bi-clock-history"></i></div>
+                                            <div class="s-countdown-text"><small>Pocinje za</small><strong>2 dana 4h 32min</strong></div>
+                                        </div>
+                                        <div class="s-section-label"><i class="bi bi-people-fill"></i> Pozvani igraci <span class="s-count-badge">7/10</span></div>
+                                        <div class="s-invite-status-list">
+                                            <div class="s-invite-status-row"><div class="s-avatar-xs">BB</div><span>Bruno Busic</span><span class="s-invite-chip accepted"><i class="bi bi-check-lg"></i> Dolazi</span></div>
+                                            <div class="s-invite-status-row"><div class="s-avatar-xs">TN</div><span>Toni Nikolic</span><span class="s-invite-chip accepted"><i class="bi bi-check-lg"></i> Dolazi</span></div>
+                                            <div class="s-invite-status-row"><div class="s-avatar-xs">JK</div><span>Josip Kus</span><span class="s-invite-chip accepted"><i class="bi bi-check-lg"></i> Dolazi</span></div>
+                                            <div class="s-invite-status-row"><div class="s-avatar-xs">JM</div><span>Josip Mak</span><span class="s-invite-chip pending"><i class="bi bi-hourglass-split"></i> Ceka</span></div>
+                                            <div class="s-invite-status-row"><div class="s-avatar-xs">MK</div><span>Marac K.</span><span class="s-invite-chip accepted"><i class="bi bi-check-lg"></i> Dolazi</span></div>
+                                            <div class="s-invite-status-row"><div class="s-avatar-xs">AM</div><span>Ante Mil</span><span class="s-invite-chip rejected"><i class="bi bi-x-lg"></i> Odbio</span></div>
+                                            <div class="s-invite-status-row"><div class="s-avatar-xs">DC</div><span>Dominik C.</span><span class="s-invite-chip accepted"><i class="bi bi-check-lg"></i> Dolazi</span></div>
+                                        </div>
+                                        <div class="s-admin-action-grid">
+                                            <button class="s-action-btn s-action-teams"><i class="bi bi-people-fill"></i><span>Podijeli timove</span></button>
+                                            <button class="s-action-btn s-action-invite"><i class="bi bi-person-plus-fill"></i><span>Pozovi</span></button>
+                                            <button class="s-action-btn s-action-edit"><i class="bi bi-pencil-square"></i><span>Uredi termin</span></button>
+                                            <button class="s-action-btn s-action-cancel"><i class="bi bi-x-circle-fill"></i><span>Otkazi termin</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span><i class="bi bi-house-door"></i><small>Pocetna</small></span>
+                                    <span class="active"><i class="bi bi-calendar3-fill"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-red">Ekran 5</span>
+                            <h3>Admin - Termin prije pocetka</h3>
+                            <p>Nakon kreiranja termina, admin vidi <strong>detalje</strong>, <strong>odbrojavanje</strong> do pocetka, status pozvanih igraca i akcijske gumbe.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Odbrojavanje do pocetka termina</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Status pozvanih: Dolazi / Ceka / Odbio</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Podijeli timove, Pozovi jos igraca</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Uredi ili otkazi termin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 6: TERMIN DETAIL (User) ======== -->
+            <div class="screen-showcase" data-screen="6">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-green"><div class="s-header-back"><i class="bi bi-arrow-left"></i></div><h6>Detalji termina</h6></div>
+                                    <div class="s-pad">
+                                        <div class="s-detail-hero"><h6>Sportski Centar Oranice</h6><div class="s-detail-meta"><span><i class="bi bi-geo-alt"></i> Oranice ul. 128</span><span><i class="bi bi-clock"></i> 08.02. 18:00</span><span><i class="bi bi-people-fill"></i> 10/10</span></div></div>
+                                        <div class="s-score-board">
+                                            <div class="s-score-team"><div class="s-team-dot dark"></div><span>Tim Crni</span></div>
+                                            <div class="s-score-nums"><span>3</span><span class="s-score-sep">:</span><span>3</span></div>
+                                            <div class="s-score-team"><span>Tim Bijeli</span><div class="s-team-dot light"></div></div>
+                                        </div>
+                                        <div class="s-teams-wrap">
+                                            <div class="s-team-list"><div class="s-team-label dark">Tim Crni</div><div class="s-team-member"><div class="s-avatar-xs">BB</div> Bruno Busic</div><div class="s-team-member"><div class="s-avatar-xs">TN</div> Toni Nikolic</div><div class="s-team-member"><div class="s-avatar-xs">JK</div> Josip Kus</div></div>
+                                            <div class="s-team-list"><div class="s-team-label light">Tim Bijeli</div><div class="s-team-member"><div class="s-avatar-xs">JM</div> Josip Mak</div><div class="s-team-member"><div class="s-avatar-xs">MK</div> Marac K.</div><div class="s-team-member"><div class="s-avatar-xs">AM</div> Ante Mil</div></div>
+                                        </div>
+                                        <div class="s-mvp-section">
+                                            <div class="s-section-label"><i class="bi bi-trophy-fill"></i> Glasaj za MVP</div>
+                                            <div class="s-mvp-options">
+                                                <label class="s-radio-card selected"><input type="radio" name="mvp2" checked><span class="s-radio-dot"></span>Bruno Busic</label>
+                                                <label class="s-radio-card"><input type="radio" name="mvp2"><span class="s-radio-dot"></span>Toni Nikolic</label>
+                                                <label class="s-radio-card"><input type="radio" name="mvp2"><span class="s-radio-dot"></span>Josip Kus</label>
+                                            </div>
+                                            <button class="s-btn-primary w-100 mt-2"><i class="bi bi-check2-circle"></i> Glasaj</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span><i class="bi bi-house-door"></i><small>Pocetna</small></span>
+                                    <span class="active"><i class="bi bi-calendar3-fill"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-green">Ekran 6</span>
+                            <h3>Detalji termina - Korisnik</h3>
+                            <p>Korisnik vidi rezultat, podjelu timova i moze <strong>glasati za MVP</strong> igraca termina.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Prikaz lokacije, vremena i broja igraca</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Score board s rezultatom</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Popis igraca po timovima</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Glasanje za MVP s radio karticama</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 7: TERMIN DETAIL (Admin) ======== -->
+            <div class="screen-showcase" data-screen="7">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-red"><div class="s-header-back"><i class="bi bi-arrow-left"></i></div><h6>Admin - Termin</h6><span class="s-admin-badge">ADMIN</span></div>
+                                    <div class="s-pad">
+                                        <div class="s-detail-hero"><h6>Sportski Centar Oranice</h6><div class="s-detail-meta"><span><i class="bi bi-clock"></i> 08.02. 18:00</span><span><i class="bi bi-people-fill"></i> 10/10</span></div></div>
+                                        <div class="s-admin-btns"><button class="s-btn s-btn-edit"><i class="bi bi-pencil-square"></i> Uredi</button><button class="s-btn s-btn-delete"><i class="bi bi-trash3"></i> Obrisi</button></div>
+                                        <div class="s-section-label"><i class="bi bi-clipboard2-data-fill"></i> Unesi rezultat</div>
+                                        <div class="s-result-input">
+                                            <div class="s-result-team"><div class="s-team-dot dark"></div><span>Tim Crni</span></div>
+                                            <input type="text" value="3" class="s-score-field" readonly>
+                                            <span class="s-score-sep-lg">:</span>
+                                            <input type="text" value="3" class="s-score-field" readonly>
+                                            <div class="s-result-team"><span>Tim Bijeli</span><div class="s-team-dot light"></div></div>
+                                        </div>
+                                        <div class="s-section-label mt-2"><i class="bi bi-star-fill"></i> Ocijeni igrace</div>
+                                        <div class="s-rate-list">
+                                            <div class="s-rate-row"><div class="s-avatar-xs">BB</div><span>Bruno B.</span><div class="s-stars"><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i><i class="bi bi-star"></i></div></div>
+                                            <div class="s-rate-row"><div class="s-avatar-xs">TN</div><span>Toni N.</span><div class="s-stars"><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i></div></div>
+                                            <div class="s-rate-row"><div class="s-avatar-xs">JK</div><span>Josip K.</span><div class="s-stars"><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i><i class="bi bi-star-fill lit"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></div></div>
+                                        </div>
+                                        <div class="d-flex gap-2 mt-3"><button class="s-btn-primary flex-fill"><i class="bi bi-bar-chart"></i> Statistika</button><button class="s-btn-secondary flex-fill"><i class="bi bi-check2-all"></i> Spremi</button></div>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span><i class="bi bi-house-door"></i><small>Pocetna</small></span>
+                                    <span class="active"><i class="bi bi-calendar3-fill"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-red">Ekran 7</span>
+                            <h3>Detalji termina - Admin</h3>
+                            <p>Admin ima pune ovlasti: <strong>uredivanje/brisanje</strong> termina, unos rezultata, ocjenjivanje igraca zvjezdicama i pregled statistike.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Uredi/obrisi gumbovi s admin badge-om</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Interaktivni unos rezultata</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Ocjenjivanje igraca zvjezdicama (1-5)</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Statistika i spremanje promjena</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 8: DIVIDE TEAMS ======== -->
+            <div class="screen-showcase" data-screen="8">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-dark"><div class="s-header-back"><i class="bi bi-arrow-left"></i></div><h6>Podijeli timove</h6></div>
+                                    <div class="s-pad">
+                                        <button class="s-btn-random"><i class="bi bi-shuffle"></i> Random podjela</button>
+                                        <div class="s-team-block dark">
+                                            <div class="s-team-block-header dark"><div class="s-team-dot dark"></div><strong>Tim Crni</strong><span class="s-team-avg">Avg: 7.3</span></div>
+                                            <div class="s-team-block-player"><div class="s-avatar-xs">BB</div><span>Bruno Busic</span><span class="s-rating-pill">7.3 <i class="bi bi-star-fill"></i></span></div>
+                                            <div class="s-team-block-player"><div class="s-avatar-xs">TN</div><span>Toni Nikolic</span><span class="s-rating-pill">10.0 <i class="bi bi-star-fill"></i></span></div>
+                                            <div class="s-team-block-player"><div class="s-avatar-xs">JK</div><span>Josip Kus</span><span class="s-rating-pill">4.5 <i class="bi bi-star-fill"></i></span></div>
+                                        </div>
+                                        <div class="s-team-block light">
+                                            <div class="s-team-block-header light"><div class="s-team-dot light"></div><strong>Tim Bijeli</strong><span class="s-team-avg">Avg: 7.9</span></div>
+                                            <div class="s-team-block-player"><div class="s-avatar-xs">JM</div><span>Josip Mak</span><span class="s-rating-pill">8.5 <i class="bi bi-star-fill"></i></span></div>
+                                            <div class="s-team-block-player"><div class="s-avatar-xs">MK</div><span>Marac Komarac</span><span class="s-rating-pill">9.0 <i class="bi bi-star-fill"></i></span></div>
+                                            <div class="s-team-block-player"><div class="s-avatar-xs">AM</div><span>Ante Mil</span><span class="s-rating-pill">6.3 <i class="bi bi-star-fill"></i></span></div>
+                                        </div>
+                                        <button class="s-btn-primary w-100 mt-3"><i class="bi bi-check2-all"></i> Spremi timove</button>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span class="active"><i class="bi bi-house-door-fill"></i><small>Pocetna</small></span>
+                                    <span><i class="bi bi-calendar3"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-dark">Ekran 8</span>
+                            <h3>Podjela timova</h3>
+                            <p>Admin dijeli igrace pomocu <strong>Random podjele</strong> (algoritam baziran na statistikama) ili manualno.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Random podjela bazirana na statistikama igraca</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Manualna podjela drag & drop</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Prosjecna ocjena tima za balans</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Prikaz individualne ocjene svakog igraca</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 9: ADMIN - UNOS STATISTIKE ======== -->
+            <div class="screen-showcase" data-screen="9">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-red"><div class="s-header-back"><i class="bi bi-arrow-left"></i></div><h6>Unos statistike</h6><span class="s-admin-badge">ADMIN</span></div>
+                                    <div class="s-pad">
+                                        <div class="s-detail-hero"><h6>Sportski Centar Oranice</h6><div class="s-detail-meta"><span><i class="bi bi-clock"></i> 08.02. 18:00</span><span><i class="bi bi-flag-fill"></i> Zavrseno</span></div></div>
+                                        <div class="s-section-label"><i class="bi bi-bullseye"></i> Golovi i asistencije</div>
+                                        <div class="s-stat-entry-list">
+                                            <div class="s-stat-entry-row">
+                                                <div class="s-avatar-xs">BB</div>
+                                                <span class="s-stat-entry-name">Bruno B.</span>
+                                                <div class="s-stat-entry-field"><label>G</label><input type="text" value="2" readonly></div>
+                                                <div class="s-stat-entry-field"><label>A</label><input type="text" value="1" readonly></div>
+                                            </div>
+                                            <div class="s-stat-entry-row">
+                                                <div class="s-avatar-xs">TN</div>
+                                                <span class="s-stat-entry-name">Toni N.</span>
+                                                <div class="s-stat-entry-field"><label>G</label><input type="text" value="1" readonly></div>
+                                                <div class="s-stat-entry-field"><label>A</label><input type="text" value="2" readonly></div>
+                                            </div>
+                                            <div class="s-stat-entry-row">
+                                                <div class="s-avatar-xs">JK</div>
+                                                <span class="s-stat-entry-name">Josip K.</span>
+                                                <div class="s-stat-entry-field"><label>G</label><input type="text" value="0" readonly></div>
+                                                <div class="s-stat-entry-field"><label>A</label><input type="text" value="0" readonly></div>
+                                            </div>
+                                            <div class="s-stat-entry-row">
+                                                <div class="s-avatar-xs">JM</div>
+                                                <span class="s-stat-entry-name">Josip M.</span>
+                                                <div class="s-stat-entry-field"><label>G</label><input type="text" value="2" readonly></div>
+                                                <div class="s-stat-entry-field"><label>A</label><input type="text" value="0" readonly></div>
+                                            </div>
+                                            <div class="s-stat-entry-row">
+                                                <div class="s-avatar-xs">MK</div>
+                                                <span class="s-stat-entry-name">Marac K.</span>
+                                                <div class="s-stat-entry-field"><label>G</label><input type="text" value="1" readonly></div>
+                                                <div class="s-stat-entry-field"><label>A</label><input type="text" value="1" readonly></div>
+                                            </div>
+                                            <div class="s-stat-entry-row">
+                                                <div class="s-avatar-xs">AM</div>
+                                                <span class="s-stat-entry-name">Ante M.</span>
+                                                <div class="s-stat-entry-field"><label>G</label><input type="text" value="0" readonly></div>
+                                                <div class="s-stat-entry-field"><label>A</label><input type="text" value="2" readonly></div>
+                                            </div>
+                                        </div>
+                                        <div class="s-stat-entry-summary">
+                                            <span><i class="bi bi-bullseye"></i> Ukupno golova: <strong>6</strong></span>
+                                            <span><i class="bi bi-hand-index"></i> Ukupno asist.: <strong>6</strong></span>
+                                        </div>
+                                        <button class="s-btn-primary w-100 mt-2"><i class="bi bi-check2-all"></i> Spremi statistiku</button>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span><i class="bi bi-house-door"></i><small>Pocetna</small></span>
+                                    <span class="active"><i class="bi bi-calendar3-fill"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-red">Ekran 9</span>
+                            <h3>Admin - Unos statistike</h3>
+                            <p>Nakon zavrsetka utakmice, admin unosi <strong>golove i asistencije</strong> za svakog igraca. Prikaz ukupne sume za verifikaciju.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Unos golova (G) i asistencija (A) po igracu</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Automatski zbroj za provjeru tocnosti</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Spremanje statistike u bazu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 10: ZAVRSEN TERMIN (User view) ======== -->
+            <div class="screen-showcase" data-screen="10">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-green"><div class="s-header-back"><i class="bi bi-arrow-left"></i></div><h6>Zavrsen termin</h6></div>
+                                    <div class="s-pad">
+                                        <div class="s-detail-hero">
+                                            <div class="s-completed-badge"><i class="bi bi-check-circle-fill"></i> Zavrseno</div>
+                                            <h6>Sportski Centar Oranice</h6>
+                                            <div class="s-detail-meta"><span><i class="bi bi-geo-alt"></i> Oranice ul. 128</span><span><i class="bi bi-clock"></i> 08.02. 18:00</span></div>
+                                        </div>
+                                        <div class="s-score-board">
+                                            <div class="s-score-team"><div class="s-team-dot dark"></div><span>Tim Crni</span></div>
+                                            <div class="s-score-nums"><span>3</span><span class="s-score-sep">:</span><span>3</span></div>
+                                            <div class="s-score-team"><span>Tim Bijeli</span><div class="s-team-dot light"></div></div>
+                                        </div>
+                                        <div class="s-section-label"><i class="bi bi-trophy-fill"></i> MVP termina</div>
+                                        <div class="s-mvp-winner">
+                                            <div class="s-mvp-winner-avatar">BB</div>
+                                            <div class="s-mvp-winner-info"><strong>Bruno Busic</strong><small>8 glasova od 10 igraca</small></div>
+                                            <div class="s-mvp-winner-badge"><i class="bi bi-trophy-fill"></i></div>
+                                        </div>
+                                        <div class="s-section-label mt-3"><i class="bi bi-bar-chart-fill"></i> Statistika igraca</div>
+                                        <div class="s-completed-stats-table">
+                                            <div class="s-cst-header">
+                                                <span class="s-cst-player">Igrac</span>
+                                                <span class="s-cst-col">G</span>
+                                                <span class="s-cst-col">A</span>
+                                                <span class="s-cst-col"><i class="bi bi-star-fill"></i></span>
+                                            </div>
+                                            <div class="s-cst-row"><div class="s-cst-player"><div class="s-avatar-xs">BB</div> Bruno B.</div><span class="s-cst-col s-cst-goals">2</span><span class="s-cst-col">1</span><span class="s-cst-col s-cst-rating">4.0</span></div>
+                                            <div class="s-cst-row"><div class="s-cst-player"><div class="s-avatar-xs">TN</div> Toni N.</div><span class="s-cst-col s-cst-goals">1</span><span class="s-cst-col">2</span><span class="s-cst-col s-cst-rating">5.0</span></div>
+                                            <div class="s-cst-row"><div class="s-cst-player"><div class="s-avatar-xs">JK</div> Josip K.</div><span class="s-cst-col s-cst-goals">0</span><span class="s-cst-col">0</span><span class="s-cst-col s-cst-rating">3.0</span></div>
+                                            <div class="s-cst-row"><div class="s-cst-player"><div class="s-avatar-xs">JM</div> Josip M.</div><span class="s-cst-col s-cst-goals">2</span><span class="s-cst-col">0</span><span class="s-cst-col s-cst-rating">4.5</span></div>
+                                            <div class="s-cst-row"><div class="s-cst-player"><div class="s-avatar-xs">MK</div> Marac K.</div><span class="s-cst-col s-cst-goals">1</span><span class="s-cst-col">1</span><span class="s-cst-col s-cst-rating">4.0</span></div>
+                                            <div class="s-cst-row"><div class="s-cst-player"><div class="s-avatar-xs">AM</div> Ante M.</div><span class="s-cst-col s-cst-goals">0</span><span class="s-cst-col">2</span><span class="s-cst-col s-cst-rating">3.5</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span><i class="bi bi-house-door"></i><small>Pocetna</small></span>
+                                    <span class="active"><i class="bi bi-calendar3-fill"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-green">Ekran 10</span>
+                            <h3>Zavrsen termin</h3>
+                            <p>Pregled zavrsenog termina s <strong>konacnim rezultatom</strong>, <strong>MVP pobjednikom</strong> i kompletnom statistikom svih igraca.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Konacni rezultat utakmice</li>
+                                <li><i class="bi bi-check-circle-fill"></i> MVP pobjednik s brojem glasova</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Tablica statistike: golovi, asistencije, ocjena</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pristup iz povijesti termina</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 11: EKIPE I PRIJATELJI ======== -->
+            <div class="screen-showcase" data-screen="11">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <!-- Ekipe Tab -->
+                                <div class="screen-scroll" id="tabEkipe">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-teal"><h6>Ekipe i prijatelji</h6></div>
+                                    <div class="s-tabs s-tabs-teal">
+                                        <span class="active" onclick="showTab('ekipe')">Ekipe</span>
+                                        <span onclick="showTab('prijatelji')">Prijatelji</span>
+                                    </div>
+                                    <div class="s-pad">
+                                        <p class="s-hint">Grupiraj igrace za brzo pozivanje na termine</p>
+                                        <button class="s-btn-accent mb-3"><i class="bi bi-plus-circle"></i> Nova ekipa</button>
+                                        <div class="s-team-card-app">
+                                            <div class="s-team-card-top"><div class="s-card-icon-wrap teal"><i class="bi bi-people-fill"></i></div><div><strong>Ekipa Oranice</strong><small>6 igraca</small></div></div>
+                                            <div class="s-team-card-actions"><button class="s-btn-sm s-btn-edit-sm"><i class="bi bi-pencil"></i> Uredi</button><button class="s-btn-sm s-btn-del-sm"><i class="bi bi-trash3"></i> Obrisi</button></div>
+                                        </div>
+                                        <div class="s-team-card-app">
+                                            <div class="s-team-card-top"><div class="s-card-icon-wrap teal"><i class="bi bi-people-fill"></i></div><div><strong>Ekipa Majstori</strong><small>12 igraca</small></div></div>
+                                            <div class="s-team-card-actions"><button class="s-btn-sm s-btn-edit-sm"><i class="bi bi-pencil"></i> Uredi</button><button class="s-btn-sm s-btn-del-sm"><i class="bi bi-trash3"></i> Obrisi</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Prijatelji Tab -->
+                                <div class="screen-scroll d-none" id="tabPrijatelji">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-teal"><h6>Ekipe i prijatelji</h6></div>
+                                    <div class="s-tabs s-tabs-teal">
+                                        <span onclick="showTab('ekipe')">Ekipe</span>
+                                        <span class="active" onclick="showTab('prijatelji')">Prijatelji</span>
+                                    </div>
+                                    <div class="s-pad">
+                                        <div class="s-search-bar"><i class="bi bi-search"></i><input type="text" placeholder="Pretrazi prijatelje..." readonly></div>
+                                        <div class="d-flex justify-content-between align-items-center mt-2 mb-2"><small class="text-muted">18 prijatelja</small><button class="s-btn-accent-sm"><i class="bi bi-person-plus"></i> Dodaj</button></div>
+                                        <div class="s-friend-card"><div class="s-avatar-sm">MC</div><div class="s-friend-info"><strong>Marijo Cvitanovic</strong><small>Online</small></div><span class="s-rating-pill">7.3 <i class="bi bi-star-fill"></i></span></div>
+                                        <div class="s-friend-card"><div class="s-avatar-sm">BB</div><div class="s-friend-info"><strong>Bruno Busic</strong><small>Zadnji put: 2h</small></div><span class="s-rating-pill">7.3 <i class="bi bi-star-fill"></i></span></div>
+                                        <div class="s-friend-card"><div class="s-avatar-sm">MG</div><div class="s-friend-info"><strong>Marin Grbic</strong><small>Zadnji put: 1d</small></div><span class="s-rating-pill">7.3 <i class="bi bi-star-fill"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span><i class="bi bi-house-door"></i><small>Pocetna</small></span>
+                                    <span><i class="bi bi-calendar3"></i><small>Termini</small></span>
+                                    <span class="active"><i class="bi bi-people-fill"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-teal">Ekran 11</span>
+                            <h3>Ekipe i prijatelji</h3>
+                            <p><strong>Ekipe</strong> omogucuju grupiranje igraca za brzo pozivanje. <strong>Prijatelji</strong> tab prikazuje listu s pretragom, ocjenama i statusom.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Kreiranje, uredivanje i brisanje ekipa</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pozivanje cijele ekipe na termin</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Pretrazivanje prijatelja</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Zahtjevi za prijateljstvo (invite sustav)</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Klik na prijatelja otvara profil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 12: LJESTVICA ======== -->
+            <div class="screen-showcase" data-screen="12">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-header-gradient s-header-orange"><h6>Ljestvica</h6></div>
+                                    <div class="s-tabs s-tabs-orange"><span class="active">MVP</span><span>Golovi</span><span>Asistencije</span><span>Ocjena</span></div>
+                                    <div class="s-pad">
+                                        <div class="s-podium">
+                                            <div class="s-podium-item second"><div class="s-podium-avatar silver">TN</div><strong>Toni N.</strong><span class="s-podium-stat">20</span><div class="s-podium-bar silver"></div></div>
+                                            <div class="s-podium-item first"><div class="s-podium-crown"><i class="bi bi-trophy-fill"></i></div><div class="s-podium-avatar gold">BB</div><strong>Bruno B.</strong><span class="s-podium-stat">24</span><div class="s-podium-bar gold"></div></div>
+                                            <div class="s-podium-item third"><div class="s-podium-avatar bronze">JK</div><strong>Josip K.</strong><span class="s-podium-stat">14</span><div class="s-podium-bar bronze"></div></div>
+                                        </div>
+                                        <div class="s-rank-item"><span class="s-rank-num">4</span><div class="s-avatar-xs">DM</div><div class="s-rank-info"><strong>Dominik M.</strong><small>45 termina</small></div><span class="s-rank-value">8</span></div>
+                                        <div class="s-rank-item"><span class="s-rank-num">5</span><div class="s-avatar-xs">IP</div><div class="s-rank-info"><strong>Ivan P.</strong><small>32 termina</small></div><span class="s-rank-value">5</span></div>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span><i class="bi bi-house-door"></i><small>Pocetna</small></span>
+                                    <span><i class="bi bi-calendar3"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span class="active"><i class="bi bi-trophy-fill"></i><small>Ljestvica</small></span>
+                                    <span><i class="bi bi-person"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge badge-orange">Ekran 12</span>
+                            <h3>Ljestvica</h3>
+                            <p>Ranking igraca prikazuje samo <strong>prijatelje</strong>. Podium za top 3 igraca i lista za ostale.</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Podium za top 3 s vizualnim barovima</li>
+                                <li><i class="bi bi-check-circle-fill"></i> MVP nagrade, golovi, asistencije, ocjena</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Broj odigranih termina uz svakog igraca</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Samo prijatelji se prikazuju</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== SCREEN 13: PROFIL ======== -->
+            <div class="screen-showcase" data-screen="13">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="phone-frame">
+                            <div class="phone-bezel-top"><div class="phone-camera"></div></div>
+                            <div class="phone-screen">
+                                <div class="screen-scroll">
+                                    <div class="s-status-bar"><span>20:13</span><span><i class="bi bi-reception-4"></i> <i class="bi bi-wifi"></i> <i class="bi bi-battery-full"></i></span></div>
+                                    <div class="s-profile-hero">
+                                        <div class="s-profile-avatar"><i class="bi bi-person-fill"></i></div>
+                                        <h5 class="s-profile-name">Bruno Busic</h5>
+                                        <span class="s-profile-subtitle">Aktivan igrac od 2024.</span>
+                                    </div>
+                                    <div class="s-pad">
+                                        <div class="s-stats-grid">
+                                            <div class="s-stat-card"><i class="bi bi-bullseye"></i><span class="s-stat-num">14</span><small>Golovi</small></div>
+                                            <div class="s-stat-card"><i class="bi bi-hand-index"></i><span class="s-stat-num">31</span><small>Asistencije</small></div>
+                                            <div class="s-stat-card"><i class="bi bi-calendar-check"></i><span class="s-stat-num">67</span><small>Termini</small></div>
+                                            <div class="s-stat-card"><i class="bi bi-star"></i><span class="s-stat-num">3.0</span><small>Ocjena</small></div>
+                                        </div>
+                                        <button class="s-btn-outline w-100 mt-3"><i class="bi bi-bar-chart-line"></i> Statistike po terminima</button>
+                                        <button class="s-btn-outline-muted w-100 mt-2"><i class="bi bi-gear"></i> Postavke profila</button>
+                                    </div>
+                                </div>
+                                <div class="phone-nav-bar">
+                                    <span><i class="bi bi-house-door"></i><small>Pocetna</small></span>
+                                    <span><i class="bi bi-calendar3"></i><small>Termini</small></span>
+                                    <span><i class="bi bi-people"></i><small>Ekipe</small></span>
+                                    <span><i class="bi bi-trophy"></i><small>Ljestvica</small></span>
+                                    <span class="active"><i class="bi bi-person-fill"></i><small>Profil</small></span>
+                                </div>
+                            </div>
+                            <div class="phone-bezel-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="screen-info">
+                            <span class="screen-badge">Ekran 13</span>
+                            <h3>Profil igraca</h3>
+                            <p>Profil s gradient headerom, avatar slikom i <strong>4 stat kartice</strong> (golovi, asistencije, termini, ocjena).</p>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill"></i> Profilna slika s gradient pozadinom</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 4 stat kartice za kljucne brojke</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Detaljne statistike po terminima</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Postavke profila (uredivanje podataka)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Suggestions Section -->
+    <section id="suggestions" class="suggestions-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-2 section-title">Prijedlozi za poboljsanje</h2>
+            <p class="text-center text-muted mb-5">Dodatne funkcionalnosti koje bi mogle unaprijediti korisnicko iskustvo</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon"><i class="bi bi-bell"></i></div><h6>Push obavijesti</h6><p>Obavijesti za pozive na termin, podsjetnik prije pocetka, rezultati i MVP glasanje.</p></div></div>
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon si-purple"><i class="bi bi-chat-dots"></i></div><h6>Chat unutar termina</h6><p>Grupni chat za dogovor oko detalja termina, promjene planova ili komentare nakon utakmice.</p></div></div>
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon si-blue"><i class="bi bi-geo-alt"></i></div><h6>Integracija mape</h6><p>Google Maps integracija za prikaz lokacije terena, navigaciju i pregled dostupnih terena u blizini.</p></div></div>
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon si-orange"><i class="bi bi-arrow-repeat"></i></div><h6>Ponavljajuci termini</h6><p>Mogucnost kreiranja tjednih/mjesecnih termina koji se automatski ponavljaju sa istim postavkama.</p></div></div>
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon si-red"><i class="bi bi-cash-stack"></i></div><h6>Podjela troskova</h6><p>Automatski izracun koliko svaki igrac treba platiti za najam terena.</p></div></div>
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon si-teal"><i class="bi bi-graph-up-arrow"></i></div><h6>Grafovi statistike</h6><p>Vizualni grafovi napretka igraca - forma, golovi po terminu, trend ocjena.</p></div></div>
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon si-indigo"><i class="bi bi-calendar-check"></i></div><h6>Kalendar dostupnosti</h6><p>Igraci oznacavaju dostupnost, admin vidi tko je slobodan prije kreiranja termina.</p></div></div>
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon si-pink"><i class="bi bi-image"></i></div><h6>Foto galerija</h6><p>Upload fotografija s termina. Zajednicka galerija za svaki odigrani termin.</p></div></div>
+                <div class="col-md-6 col-lg-4"><div class="suggestion-card"><div class="suggestion-icon si-amber"><i class="bi bi-person-check"></i></div><h6>Lista cekanja</h6><p>Kad je termin pun, igraci se stavljaju na listu cekanja i automatski ulaze kad netko otkaze.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tech" class="tech-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Tehnoloski stack</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3"><div class="tech-card"><i class="bi bi-phone"></i><h6>Android (Kotlin)</h6><p>Nativna Android aplikacija</p></div></div>
+                <div class="col-md-3"><div class="tech-card"><i class="bi bi-hdd-rack"></i><h6>.NET Web API</h6><p>Backend REST API</p></div></div>
+                <div class="col-md-3"><div class="tech-card"><i class="bi bi-database"></i><h6>MSSQL</h6><p>Relacijska baza podataka</p></div></div>
+                <div class="col-md-3"><div class="tech-card"><i class="bi bi-shield-lock"></i><h6>Microsoft.Identity</h6><p>Autentifikacija i autorizacija</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+        <div class="container text-center">
+            <h4 class="fw-bold mb-2">TERMIN</h4>
+            <p class="text-muted mb-0">Organiziraj. Igraj. Natjeci se.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
